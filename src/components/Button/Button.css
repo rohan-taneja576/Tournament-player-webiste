@@ -9,6 +9,7 @@
   cursor: pointer;
   background: none;
   text-transform: uppercase;
+  z-index: 1;
 }
 .btn:hover {
   padding: 8px 20px;

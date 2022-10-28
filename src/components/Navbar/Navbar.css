@@ -4,6 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
+  position: sticky;
+  top: 0;
 }
 .nav-logo {
   color: #fff;
@@ -15,6 +18,7 @@
   width: 200px;
   text-align: center;
   text-transform: uppercase;
+  z-index: 1;
 }
 .nav-item {
   display: flex;
@@ -29,6 +33,7 @@
   text-align: center;
   width: 70vw;
   justify-content: center;
+  z-index: 1;
 }
 .nav-links {
   color: #fff;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../Button/Button";
 // import { MenuItems } from "./MenuItems";
 import { Link } from "react-router-dom";
@@ -8,6 +8,8 @@ import Dropdown from "../Dropdown/Dropdown";
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
   const [dropdown, setDropdown] = useState(false);
+  const [showNavBG, setShowNavBG] = useState(false);
+
   const handleClick = () => {
     setClicked(!clicked);
   };
@@ -22,6 +24,20 @@ const Navbar = () => {
   const onMouseLeave = () => {
     window.innerWidth < 960 ? setDropdown(false) : setDropdown(false);
   };
+
+  const showNavbarBG = () => {
+    if (window.innerWidth < 960) {
+      setShowNavBG(false);
+    } else {
+      setShowNavBG(true);
+    }
+  };
+
+  useEffect(() => {
+    showNavbarBG();
+  }, []);
+
+  window.addEventListener("resize", showNavbarBG);
   return (
     <nav className="Navbar-Items">
       <Link to="/" className="nav-logo">
