@@ -107,19 +107,6 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
-        {/* {MenuItems.map((item, index) => {
-          return (
-            <li key={index}>
-              <Link
-                className={item.cName}
-                to={item.url}
-                onClick={closeMobileMenu}
-              >
-                {item.title}
-              </Link>
-            </li>
-          );
-        })} */}
       </ul>
       <Button>Login/become a member</Button>
     </nav>
