@@ -1,0 +1,24 @@
+:root {
+  --accent-greeb-color: rgb(95, 183, 163);
+}
+.btn {
+  padding: 8px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+  text-transform: uppercase;
+}
+.btn:hover {
+  padding: 8px 20px;
+  transition: all 0.3s ease-out;
+  color: var(--accent-greeb-color);
+  transition: 250ms;
+}
+.btn--medium {
+  padding: 8px 20px;
+  border-radius: 4px;
+  color: #fff;
+  letter-spacing: 1px;
+}
