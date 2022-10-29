@@ -63,6 +63,13 @@
   z-index: -1;
   transition: all 0.3s ease;
 }
+
+@media screen and (max-width: 1450px) {
+  .btn-line-effect {
+    position: absolute;
+    right: 5%;
+  }
+}
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .btn-line-effect {
     display: none;
