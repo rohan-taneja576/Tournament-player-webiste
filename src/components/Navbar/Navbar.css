@@ -1,17 +1,19 @@
 .Navbar-Items {
-  background: #000;
+  background: transparent;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
-  position: sticky;
+  position: fixed;
   top: 0;
+}
+.active {
+  background: #000;
 }
 .nav-logo {
   color: #fff;
   justify-self: start;
-  margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
   font-size: 26px;
@@ -19,6 +21,9 @@
   text-align: center;
   text-transform: uppercase;
   z-index: 1;
+}
+.nav-logo:hover {
+  color: #fff;
 }
 .nav-item {
   display: flex;
@@ -34,6 +39,7 @@
   width: 70vw;
   justify-content: center;
   z-index: 1;
+  margin-bottom: 0rem !important;
 }
 .nav-links {
   color: #fff;
@@ -55,9 +61,6 @@
 }
 
 @media screen and (max-width: 1450px) {
-  .Navbar-Items {
-    position: relative;
-  }
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -102,8 +105,13 @@
     color: #fff;
     font-size: 2rem;
   }
-  .btn {
-    position: absolute;
-    right: 5%;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .nav-menu.active {
+    height: 100vh;
+  }
+  .Navbar-Items {
+    width: 100%;
   }
 }

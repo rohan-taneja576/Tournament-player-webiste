@@ -26,20 +26,16 @@ const Navbar = () => {
   };
 
   const showNavbarBG = () => {
-    if (window.innerWidth < 960) {
-      setShowNavBG(false);
-    } else {
+    if (window.scrollY >= 80) {
       setShowNavBG(true);
+    } else {
+      setShowNavBG(false);
     }
   };
 
-  useEffect(() => {
-    showNavbarBG();
-  }, []);
-
-  window.addEventListener("resize", showNavbarBG);
+  window.addEventListener("scroll", showNavbarBG);
   return (
-    <nav className="Navbar-Items">
+    <nav className={showNavBG ? "Navbar-Items active" : "Navbar-Items"}>
       <Link to="/" className="nav-logo">
         Tournament Player
       </Link>
@@ -108,7 +104,7 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <Button>Login/become a member</Button>
+      <Button path="/login-or-member">Login/become a member</Button>
     </nav>
   );
 };

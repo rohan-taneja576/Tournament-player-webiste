@@ -1,11 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Button.css";
 
-const Button = ({ children, type, onClick }) => {
+const Button = ({ children, path, closeMobileMenu }) => {
   return (
-    <button className="btn btn--medium" onClick={onClick} type={type}>
+    <Link
+      className="btn--medium btn--link btn-line-effect"
+      to={path}
+      onClick={closeMobileMenu}
+    >
       {children}
-    </button>
+    </Link>
   );
 };
 
