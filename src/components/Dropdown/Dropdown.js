@@ -3,16 +3,18 @@ import { Link } from "react-router-dom";
 import { MenuItems } from "../Navbar/MenuItems";
 import "./Dropdown.css";
 
-const Dropdown = () => {
+const Dropdown = ({ name }) => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   return (
     <>
       <ul
-        className={click ? "dropdown-menu clicked" : "dropdown-menu"}
+        className={
+          click ? `dropdownmenu clicked ${name}` : `dropdownmenu ${name}`
+        }
         onClick={handleClick}
       >
-        {MenuItems.map((item, index) => {
+        {MenuItems[0][name]?.map((item, index) => {
           return (
             <li key={index}>
               <Link

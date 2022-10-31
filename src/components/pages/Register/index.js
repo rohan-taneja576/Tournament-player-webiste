@@ -98,7 +98,6 @@ const Register = () => {
     (val, index) => getMonthDays() - index
   );
   monthList.push(List);
-  console.log({ monthList });
 
   return (
     <>

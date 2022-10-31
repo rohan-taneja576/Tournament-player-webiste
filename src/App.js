@@ -6,20 +6,23 @@ import Home from "./components/pages/Home";
 import AboutUs from "./components/pages/AboutUs";
 import LoginOrMember from "./components/pages/Login-or-member";
 import Register from "./components/pages/Register";
+import AppProvider from "./components/AppProvider";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/login-or-member" element={<LoginOrMember />} />
-          <Route path="/register" element={<Register />} />
-        </Routes>
-      </Router>
-    </div>
+    <AppProvider>
+      <div className="App">
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/login-or-member" element={<LoginOrMember />} />
+            <Route path="/register" element={<Register />} />
+          </Routes>
+        </Router>
+      </div>
+    </AppProvider>
   );
 }
 

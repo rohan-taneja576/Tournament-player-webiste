@@ -8,6 +8,9 @@
   position: fixed;
   top: 0;
 }
+.nav-menu {
+  padding-left: 0px !important;
+}
 .active {
   background: #000;
 }
@@ -46,6 +49,9 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
+.nav-links div {
+  display: none;
+}
 .nav-links:hover {
   color: rgb(95, 183, 163);
   transition: all 0.2s ease-in-out;
@@ -64,30 +70,47 @@
   .Navbar-Items {
     width: 100%;
   }
+  .fa-caret-down {
+    display: none;
+  }
+  .nav-item {
+    height: auto !important;
+  }
   .nav-menu {
     display: flex;
+    justify-content: start;
     flex-direction: column;
     width: 100%;
     position: absolute;
     height: 0vh;
     top: 80px;
-    overflow: hidden;
+    overflow: scroll;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease-out;
   }
   .nav-menu.active {
     background: #000;
-    height: 110vh;
+    height: 85vh;
     opacity: 0.8;
     transition: all 0.5s ease;
     z-index: 1;
   }
   .nav-links {
     text-align: center;
-    padding: 2rem;
     width: 100%;
     display: table;
+  }
+  .nav-links div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .nav-links div a {
+    color: #fff !important;
+    text-decoration: none !important;
   }
   .nav-logo {
     position: absolute;
@@ -111,9 +134,6 @@
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
-  .nav-menu.active {
-    height: 100vh;
-  }
   .Navbar-Items {
     width: 100%;
   }

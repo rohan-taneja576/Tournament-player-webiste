@@ -1,55 +1,127 @@
-// export const MenuItems = [
-//   {
-//     title: "About us",
-//     url: "/",
-//     cName: "nav-links",
-//   },
-//   {
-//     title: "Tournaments",
-//     url: "/",
-//     cName: "nav-links",
-//   },
-//   {
-//     title: "Tour news",
-//     url: "/",
-//     cName: "nav-links",
-//   },
-//   {
-//     title: "Shop",
-//     url: "/",
-//     cName: "nav-links",
-//   },
-//   {
-//     title: "Travels",
-//     url: "/",
-//     cName: "nav-links",
-//   },
-//   {
-//     title: "For investors/partners",
-//     url: "/",
-//     cName: "nav-links",
-//   },
-//   {
-//     title: "Our members",
-//     url: "/",
-//     cName: "nav-links",
-//   },
-//   {
-//     title: "Contact",
-//     url: "/",
-//     cName: "nav-links",
-//   },
-// ];
-
 export const MenuItems = [
   {
-    title: "WTPO Foundation",
-    path: "/wtpo-foundation",
-    cName: "dropdown-link",
-  },
-  {
-    title: "Our Story",
-    path: "/our-story",
-    cName: "dropdown-link",
+    aboutUs: [
+      {
+        title: "WTPO Foundation",
+        path: "/wtpo-foundation",
+        cName: "dropdownlink",
+      },
+      {
+        title: "Our Story",
+        path: "/our-story",
+        cName: "dropdownlink",
+      },
+    ],
+    tournaments: [
+      {
+        title: "World Tournament Players Facilities",
+        path: "/world-tournament-players-facilities",
+        cName: "dropdownlink",
+      },
+    ],
+    investor: [
+      {
+        title: "Africa",
+        path: "/africa",
+        cName: "dropdownlink",
+      },
+      {
+        title: "Asia",
+        path: "/asia",
+        cName: "dropdownlink",
+      },
+      {
+        title: "Australia",
+        path: "/australia",
+        cName: "dropdownlink",
+      },
+      {
+        title: "Canada",
+        path: "/canada",
+        cName: "dropdownlink",
+      },
+      {
+        title: "EU",
+        path: "/eu",
+        cName: "dropdownlink",
+      },
+      {
+        title: "Nordic Region",
+        path: "/nordic-region",
+        cName: "dropdownlink",
+      },
+      {
+        title: "South America",
+        path: "/south-america",
+        cName: "dropdownlink",
+      },
+      {
+        title: "UK",
+        path: "/uk",
+        cName: "dropdownlink",
+      },
+      {
+        title: "USA",
+        path: "/usa",
+        cName: "dropdownlink",
+      },
+      {
+        title: "Others",
+        path: "/others",
+        cName: "dropdownlink",
+      },
+    ],
+    members: [
+      {
+        title: "Africa",
+        path: "/africa",
+        cName: "dropdownlink",
+      },
+      {
+        title: "Asia",
+        path: "/asia",
+        cName: "dropdownlink",
+      },
+      {
+        title: "Australia",
+        path: "/australia",
+        cName: "dropdownlink",
+      },
+      {
+        title: "Canada",
+        path: "/canada",
+        cName: "dropdownlink",
+      },
+      {
+        title: "EU",
+        path: "/eu",
+        cName: "dropdownlink",
+      },
+      {
+        title: "Nordic Region",
+        path: "/nordic-region",
+        cName: "dropdownlink",
+      },
+      {
+        title: "South America",
+        path: "/south-america",
+        cName: "dropdownlink",
+      },
+      {
+        title: "UK",
+        path: "/uk",
+        cName: "dropdownlink",
+      },
+      {
+        title: "USA",
+        path: "/usa",
+        cName: "dropdownlink",
+      },
+      {
+        title: "Others",
+        path: "/others",
+        cName: "dropdownlink",
+      },
+    ],
   },
 ];
